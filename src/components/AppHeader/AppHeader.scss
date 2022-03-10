@@ -1,0 +1,28 @@
+@import "../../partials/config", "../../partials/variables";
+
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    font-size: 14px;
+
+    .nav-icon {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+}

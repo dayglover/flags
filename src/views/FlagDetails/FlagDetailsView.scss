@@ -1,0 +1,122 @@
+@import "../../partials/config", "../../partials/variables";
+
+.details {
+  padding-top: 30px;
+  font-size: 14px;
+  padding-bottom: 50px;
+
+  &-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &-back-btn {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    justify-content: center;
+
+    p {
+      margin-left: 5px;
+    }
+  }
+  &-main {
+    margin-top: 50px;
+  }
+  &-main-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+  &-main-info {
+    margin-top: 40px;
+
+    &-first {
+      margin-top: 20px;
+
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    &-second {
+      margin-top: 30px;
+    }
+
+    &-third {
+      margin-top: 30px;
+
+      .border-container {
+        display: flex;
+        margin-top: 10px;
+        flex-wrap: wrap;
+
+        p {
+          padding: 5px 25px;
+          margin-right: 10px;
+          margin-top: 10px;
+          // margin-bottom: 10px;
+          cursor: pointer;
+
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .details-main {
+    display: flex;
+    justify-content: space-between;
+
+    &-img {
+      width: 45%;
+      object-fit: fill;
+    }
+
+    &-info {
+      width: 45%;
+      margin-top: 40px;
+
+      h3 {
+        font-size: 28px;
+      }
+
+      &-first {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      &-second {
+        margin-top: 0;
+      }
+
+      &-third {
+        display: flex;
+        align-items: center;
+        margin-top: 60px;
+
+        h4 {
+          margin-right: 20px;
+          font-weight: 400;
+        }
+
+        .border-container {
+          margin-top: 0;
+
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}

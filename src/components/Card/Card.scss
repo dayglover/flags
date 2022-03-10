@@ -1,0 +1,45 @@
+@import "../../partials/config", "../../partials/variables";
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  // background-color: white;
+  min-height: 340px;
+  margin-bottom: 40px;
+  width: 300px;
+  border-radius: 8px;
+  // box-shadow: -2px -1px 5px 3px rgba(232, 227, 227, 0.75);
+  // -webkit-box-shadow: -2px -1px 5px 3px rgba(232, 227, 227, 0.75);
+  // -moz-box-shadow: -2px -1px 5px 3px rgba(232, 227, 227, 0.75);
+
+  &-image-container {
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      // border-top-left-radius: 8px;
+    }
+  }
+
+  &-text {
+    width: 80%;
+    margin: 20px auto;
+    // color: black;
+
+    &-heading {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+}
